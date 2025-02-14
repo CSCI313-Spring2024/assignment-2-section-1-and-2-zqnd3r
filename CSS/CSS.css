@@ -1,0 +1,100 @@
+h1 {
+    color: #333;
+}
+h2 {
+    color: rgb(75, 2, 2);
+    
+}
+h1 {
+    color: #333;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a8a2a2; /* Light gray background */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #30353a;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: none;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel */
+.carousel-item img {
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(1);
+}
+
+/* Table */
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.table thead {
+    text-transform: uppercase;
+}
+
+/* Form */
+.form-control {
+    border-radius: 8px;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 10px;
+}
+.modal-header {
+    background-color: #007bff;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.modal-footer {
+    background-color: #f1f1f1;
+}
+
+/* Hover Shadow Effect */
+.hover-shadow:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}

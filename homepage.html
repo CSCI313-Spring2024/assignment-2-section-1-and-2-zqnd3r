@@ -1,42 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <link href = "CSS/CSS.css" rel = "stylesheet">
+  <!--navbar-->
+  <nav class="navbar">
+    <button class="btn"><a href="#contact">contact me</a></button>
+    <button class="btn"><a href="#projects">projects</a></button>
+    <button class="btn"><a href="https://www.google.com/search?q=somewhere+definition&sca_esv=4e0181a9788cff7f&rlz=1C1UEAD_enUS995US995&sxsrf=AHTn8zr736Dq-r5lilNbL_bZGMd0f8zrCg%3A1739563252479&ei=9KCvZ47rHL2ewN4PiN-08AI&ved=0ahUKEwiOtemN-sOLAxU9D9AFHYgvDS4Q4dUDCBI&uact=5&oq=somewhere+definition&gs_lp=Egxnd3Mtd2l6LXNlcnAiFHNvbWV3aGVyZSBkZWZpbml0aW9uMgoQABiABBhGGPkBMgYQABgWGB4yBhAAGBYYHjILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyBRAAGO8FMggQABiABBiiBEioFFCCBFitEnABeAGQAQCYAY8BoAHmCqoBBDAuMTG4AQPIAQD4AQGYAgygAooLwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAg0QABiABBixAxhDGIoFwgIQEC4YgAQYsQMYQxjUAhiKBcICDRAuGIAEGLEDGEMYigXCAgUQABiABMICChAAGIAEGEMYigXCAgsQLhiABBixAxiDAcICChAuGIAEGEMYigXCAggQLhiABBjUAsICCxAAGIAEGLEDGIMBwgIFEC4YgASYAwCIBgGQBgySBwQxLjExoAfQkgE&sclient=gws-wiz-serp">somewhere</a></button>
+  </nav>
+  <!--Title-->
+  <head class="modal">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <h1>Welcome to da home page</h1>
-    <nav>
-        <button>more info</button>
-        <button>less info</button>
-    </nav>
+    <h1>Welcome to the home page</h1>
   </head>
+  <br>
+  <!--Body text-->
   <body>
     <h1>introduction</h1>
-    <img src="images/CorvetteCorvette.jpg" style=width:40% alt="its a corvette">
+    <div><img class="card"src="images/me.jpg" style=width:40% alt="image of me"></div>
     <br>
-    <p1
+    <p
       >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
       cupiditate aliquid eum aut. Temporibus eos dolores numquam reprehenderit,
-      explicabo ipsam!</p1
+      explicabo ipsam!</p
     >
-    <h2>About me</h2>
-    <p2
+    <h1>About me</h1>
+    <p
       >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque sint
       voluptate laudantium et molestiae, deserunt enim officiis quae odio
       consequuntur suscipit iusto dolorum omnis nisi architecto ab saepe! Omnis
       corrupti provident quaerat. Deserunt reiciendis recusandae officia itaque
-      quae? Eaque, vero?</p2
+      quae? Eaque, vero?</p
     >
-    <h3>Portfolio/projects</h3>
-    <p3
+    <h1 id="projects">Portfolio/projects</h1>
+    <p
       >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium
       voluptate iure repudiandae tenetur. Mollitia enim reiciendis repudiandae
       eaque voluptas ab quos aspernatur distinctio suscipit harum nulla dolorem
       dolores quo rerum nihil delectus, minus ducimus cum omnis aliquid totam
       fugiat cumque libero? Porro eum esse quisquam ut! Ex praesentium quasi
-      porro.</p3
+      porro.</p
     >
-    <h4>contact</h4>
-    <p4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, aperiam.</p4>
+    <!--Corvette Card-->
+    <div class="card" style="width: 18rem; align-items: center;">
+      <img style="width: 60%" src="images/CorvetteCorvette.jpg" class="card-img-top" alt="Project">
+      <div class="card-body">
+          <h5 class="card-title">Corvette build</h5>
+          <p class="card-text">Click the button below to see more details.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal">
+              <a href="corvette-project.html">View Details</a>
+          </button>
+      </div>
+  </div>
+  <div class="card" style="width: 18rem; align-items: center;">
+    <img style="width: 60%" src="images/4wheela.jpg" class="card-img-top" alt="Project">
+    <div class="card-body">
+        <h5 class="card-title">4-wheeler trick</h5>
+        <p class="card-text">Click the button below to see more details.</p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal">
+            <a href="4wheela.html">View Details</a>
+        </button>
+    </div>
+</div>
+  <!--Weekly Schedule table-->
+  <section class="container mt-5">
+    <h2>Weekly Schedule</h2>
+    <table style="background-color:rgb(167, 167, 195)"class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Day</th>
+                <th>Activity</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-primary">
+                <td>Monday</td>
+                <td>Work</td>
+                <td>9 AM - 5 PM</td>
+            </tr>
+            <tr class="table-success">
+                <td>Tuesday</td>
+                <td>Gym</td>
+                <td>6 PM - 8 PM</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<!--contact form-->
+    <section id="contact" class="container mt-5">
+      <h1>Contact Me</h1>
+      <form class="form-control">
+          <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Send Message</button>
+      </form>
+  </section>
   </body>
 </html>
